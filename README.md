@@ -88,3 +88,7 @@ Dockerfile: Instructions to build the app
 
 docker-compose.yml: Multi-container configuration
 
+Below is the official Docker compose GitHub repository with source cod for reference 
+
+https://github.com/karthiknganesan/awesome-compose
+
