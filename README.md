@@ -4,6 +4,8 @@ Docker Compose Full-Stack Examples
 
 This repository contains Dockerized templates for popular web development stacks using Docker Compose. Each stack includes a Dockerfile and docker-compose.yml to help you get started quickly.
 
+Note: This repository is intended for reference purposes only. It contains only the basic Dockerfile and docker-compose.yml configurations. The actual application source code is not included.
+
 Included Stacks
 
 1. Node.js + MongoDB
@@ -85,3 +87,4 @@ Each folder contains:
 Dockerfile: Instructions to build the app
 
 docker-compose.yml: Multi-container configuration
+
