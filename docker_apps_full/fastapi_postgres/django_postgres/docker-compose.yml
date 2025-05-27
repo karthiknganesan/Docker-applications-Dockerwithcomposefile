@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./web
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DATABASE_URL=postgres://postgres:example@db:5432/django_db
+
+  db:
+    image: postgres:14
+    environment:
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: django_db
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+volumes:
+  pg_data:
